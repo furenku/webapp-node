@@ -8,6 +8,10 @@ const routes = function( app ) {
 
     app.get("/date", routeController.date )
 
+    app.get("/hello", routeController.getHello )
+    
+    app.post("/hello", routeController.postHello )
+
 }
 
 

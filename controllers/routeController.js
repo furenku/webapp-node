@@ -5,12 +5,12 @@ const routeController = {
         res.send("Hello world")
     },
     time: function(req, res){
-        const texto = `La hora es: ${ moment().format('h:mm:ss a') }`  
-        res.send( texto )
+        const text = `La hora es: ${ moment().format('h:mm:ss a') }`  
+        res.send( text )
     },
     date: function(req, res){
-        const texto = `La fecha es: ${ moment().format('DD/MM/YYYY') }`  
-        res.send( texto )
+        const text = `La fecha es: ${ moment().format('DD/MM/YYYY') }`  
+        res.send( text )
     }
 }
 

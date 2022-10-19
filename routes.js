@@ -1,6 +1,6 @@
 const routeController = require("./controllers/routeController")
 
-module.exports = function( app ) {
+const routes = function( app ) {
 
     app.get("/", routeController.home )
 
@@ -9,3 +9,6 @@ module.exports = function( app ) {
     app.get("/date", routeController.date )
 
 }
+
+
+module.exports = routes
